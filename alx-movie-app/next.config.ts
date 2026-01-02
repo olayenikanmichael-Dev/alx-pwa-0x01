@@ -8,6 +8,10 @@ const withPWA = withPWAInit({
 
 const nextConfig = {
   reactStrictMode: true,
+
+  // 👇 THIS FIXES THE VERCEL BUILD ERROR
+  turbopack: {},
+
   images: {
     domains: ["m.media-amazon.com"],
   },
